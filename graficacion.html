@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica de Estadísticas de Alumnos</title>
+    <link rel="stylesheet" href="Css/graficacions.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+            <li><a href="politica.html" id="privacy">Avisos de Privacidad</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="container">
+        <h1>Gráfica de Estadísticas de Alumnos</h1>
+        <form id="dataForm">
+            <label for="alumnos">Cantidad de Alumnas Embarazadas:</label>
+            <input type="number" id="alumnos" name="alumnos" min="1" required>
+            <label for="alumnas">Cantidad de Alumnas No Embarazadas:</label>
+            <input type="number" id="alumnas" name="alumnas" min="1" required>
+            <button type="submit">Generar Gráfica</button>
+
+        </form>
+        <button id="clearFields">Limpiar Campos</button>
+        <button id="clearChart">Borrar Gráfico</button>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Js/graficacion.js"></script>
+
+    <div class="spacer"></div> 
+    <footer>
+        <p>&copy; 2024 Embarazo Precoz. Todos los derechos reservados Ramsal.</p>
+        <p>
+            <a href="politica.html">Política de Privacidad</a> |
+        </p>
+    </footer>
+</body>
+</html>
